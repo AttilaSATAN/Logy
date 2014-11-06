@@ -6,7 +6,7 @@ Simple solution for console logging management tool with file names and line num
 
 
 
-It's simple.
+It's a simple console wrapper.
 
 You need to initiate Logy with .
 
@@ -27,6 +27,5 @@ If process.env.NODE_ENV === 'production', logy is silent. You can manually overr
 
     logy.log('Hello Logy');
 
-    ========== Logy ========
     Hello Logy!
-        at Runner.runTest (/usr/lib/node_modules/mocha/lib/runner.js:373:10)
+        at Context.<anonymous> (/home/lupus/Dev/Projects/Kişisel/logy/test/logy.test.js:8:13)

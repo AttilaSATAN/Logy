@@ -1,7 +1,7 @@
 {
   "name": "logy",
   "version": "0.0.1",
-  "description": "Logging manager",
+  "description": "Logging manager with line numbers and file names",
   "main": "logy.js",
   "directories": {
     "test": "test"
@@ -11,6 +11,7 @@
     "url": "git@github.com:AttilaSATAN/Logy.git"
   },
   "scripts": {
+    "start": "node --harmony logy.js",
     "test": "mocha --harmony"
   },
   "author": "Attila SATAN",
