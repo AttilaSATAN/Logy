@@ -22,8 +22,10 @@ For now it has only have one method
 If process.env.NODE_ENV === 'production', logy is silent. You can manually override this with logging option.
 
     var logy = new Logy({
-        logging: false
+        logging: true
         });
+
+    logy.log('Hello Logy');
 
     ========== Logy ========
     Hello Logy!
