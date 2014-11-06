@@ -28,4 +28,4 @@ If process.env.NODE_ENV === 'production', logy is silent. You can manually overr
     logy.log('Hello Logy');
 
     Hello Logy!
-        at Context.<anonymous> (/home/lupus/Dev/Projects/Kişisel/logy/test/logy.test.js:8:13)
+        at Context.<anonymous> (/home/lupus/projects/logy/test/logy.test.js:8:13)
