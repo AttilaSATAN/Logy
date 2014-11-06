@@ -1,0 +1,22 @@
+{
+  "name": "logy",
+  "version": "0.0.1",
+  "description": "Logging manager",
+  "main": "logy.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AttilaSATAN/Logy.git"
+  },
+  "scripts": {
+    "test": "mocha --harmony"
+  },
+  "author": "Attila SATAN",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
+  }
+}
