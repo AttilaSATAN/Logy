@@ -2,7 +2,7 @@ Logy
 ---
 
 Simple solution for console logging management tool with file names and line numbers.
----------------------------------------------------
+===
 
 
 
