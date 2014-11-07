@@ -1,6 +1,6 @@
 {
   "name": "logy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Logging manager with line numbers and file names",
   "main": "logy.js",
   "directories": {
