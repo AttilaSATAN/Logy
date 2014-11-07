@@ -17,7 +17,7 @@ function log(){
     console.log.apply(console, Array.prototype.slice.call(arguments));
     console.log(callerLine)
 }
-
+Logy.prototype.logging = true;
 Logy.prototype.log = function () {
     if(this.logging)
         log.apply(console, Array.prototype.slice.call(arguments));
