@@ -16,8 +16,8 @@ function log(){
     var callerLine = (new Error).stack.split("\n")[3],
         logs = Array.prototype.slice.call(arguments),
         colorizedLogs = [];
-         logs.forEach(function () {
-             colorizedLogs.push(util.inspect(provider, {
+         logs.forEach(function (log) {
+             colorizedLogs.push(util.inspect(log, {
                  showHidden: true,
                  depth: 10,
                  colors: true,
