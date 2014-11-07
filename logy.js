@@ -1,6 +1,7 @@
 'use strict';
+var util = require('util');
 
-
+module.exports = Logy;
 
 function Logy(options) {
 
@@ -12,9 +13,19 @@ function Logy(options) {
 }
 
 function log(){
-    var callerLine = (new Error).stack.split("\n")[3];
+    var callerLine = (new Error).stack.split("\n")[3],
+        logs = Array.prototype.slice.call(arguments),
+        colorizedLogs = [];
+         logs.forEach(function () {
+             colorizedLogs.push(util.inspect(provider, {
+                 showHidden: true,
+                 depth: 10,
+                 colors: true,
+                 stylize: true
+             }));
+         });
     console.log('========== Logy ========');
-    console.log.apply(console, Array.prototype.slice.call(arguments));
+    console.log.apply(console, colorizedLogs);
     console.log(callerLine)
 }
 Logy.prototype.logging = true;
@@ -24,4 +35,3 @@ Logy.prototype.log = function () {
 };
 
 
-module.exports = Logy;
